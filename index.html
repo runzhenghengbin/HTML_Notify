@@ -10,12 +10,24 @@
 <button>点击</button>
 </body>
 <script type="text/javascript">
+/* ------------------------------------------
+        Shows the notification (if possible)
+        message = {
+            icon:
+            title:
+            message:
+            onshow:
+            onclick:
+            onerror:
+            onclose:
+        }
+    ------------------------------------------ */ 
 	$(function(){
 		$("button").click(function(){
 			Notify.show({
 				icon:"images/icon.png",
-	            title:'消息提醒', 
-	            message:"hello world!"
+	            title:'hello world!', 
+	            message:"Talk is cheap. Show me the code!"
 	        });
 		});
 	})
